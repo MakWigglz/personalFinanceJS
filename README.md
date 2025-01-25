@@ -106,3 +106,28 @@ Build a comprehensive personal finance management application that allows users 
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 
 Starting such a project will help you practice and master a wide range of JavaScript-related skills and technologies. Good luck!
+Transaction creation
+Transaction categorization
+Transaction history
+Filtering and sorting capabilities
+
+The backend route in dashboard.js already handles transaction fetching, and the frontend Dashboard.js component displays them. Here's how we can implement the requested features:
+
+Transaction Creation:
+Add a new POST route in dashboard.js for creating transactions
+Create a TransactionForm component that connects to the Dashboard
+Include fields for amount, type (income/expense), category, and description
+Transaction Categorization:
+Extend the Transaction model to include category field
+Add category selection in the transaction form
+Update the DataVisualization component to show data by category
+Transaction History:
+The dashboard.js backend route already fetches recent transactions
+Expand the frontend to show a dedicated transaction history page
+Include pagination for better performance
+Filtering and Sorting:
+Add query parameters to the backend API
+Implement filter controls (by date range, category, amount)
+Add sorting options (by date, amount, category)
+The existing authentication system and React components provide a great starting point for building these features. The DataVisualization component can be enhanced to show more detailed transaction analytics as well.
+
